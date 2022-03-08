@@ -70,11 +70,11 @@ const Loading = () => {
            {loading === true ?(
               <BallTriangle color="#00BFFF" height={80} width={80} />
             ):(
-            <TableBody>
+            <TableBody data-testid="custom-element-body">
                 { data ? data.map((item:type)=>{
                     return(
 
-                        <TableRow>
+                        <TableRow >
                         <TableCell align="center">{item.title}</TableCell>
                         <TableCell align="center">{item.author}</TableCell>
                         <TableCell align="center">
